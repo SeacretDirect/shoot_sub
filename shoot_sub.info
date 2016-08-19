@@ -50,3 +50,5 @@ scripts[] = assets/js/shoot.js
 
 settings[drupalexp_default_preset] = '0'
 settings[drupalexp_direction] = 'default'
+
+stylesheets[all][] = assets/css/style-seacret.css
