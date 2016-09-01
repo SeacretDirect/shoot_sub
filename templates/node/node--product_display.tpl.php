@@ -79,6 +79,14 @@
 * @ingroup themeable
 */
 ?>
+<?php 
+global $user;
+
+if(!$domain_id){
+	$_domain = domain_get_domain();
+	$domain_id = $_domain['domain_id'];
+}
+?>
 <div id="node-<?php print $node->nid; ?>" class="node-product-detail <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
     <?php print render($title_prefix); ?>
     <?php print render($title_suffix); ?>
@@ -98,7 +106,71 @@
             <div class="rating">
                   <?php print render($content['field_product_rating']);?>
             </div>
-            <div class="price"><?php print render ($content['product:commerce_price']);?></div>
+            <div class="price">
+			<?php
+				/* DISPLAY PRICE ACCORDING TO COUNTRY */
+				/* USA */
+				if($domain_id == 1){
+					if(in_array('vip', $user->roles)){
+						print ('<div class="field-label"><strong>VIP Price:&nbsp;</strong></div>');
+						print render ($content['product:field_vip']);
+					} else {
+						print render ($content['product:commerce_price']);
+					}
+				} 
+				
+				/* CANADA */
+				elseif($domain_id == 5){
+					if(in_array('vip', $user->roles)){
+						print ('<div class="field-label"><strong>VIP Price:&nbsp;</strong></div>');
+						print render ($content['field_canada_vip']);
+					} else {
+						print render ($content['product:field_canada_price']);
+					}
+				}
+				
+				/* Mexico */
+				elseif($domain_id == 2){
+					if(in_array('vip', $user->roles)){
+						print ('<div class="field-label"><strong>VIP Price:&nbsp;</strong></div>');
+						print render ($content['field_mexico_vip']);
+					} else {
+						print render ($content['product:field_mexico_price']);
+					}
+				}
+				
+				/* Australia */
+				elseif($domain_id == 4){
+					if(in_array('vip', $user->roles)){
+						print ('<div class="field-label"><strong>VIP Price:&nbsp;</strong></div>');
+						print render ($content['field_australia_vip']);
+					} else {
+						print render ($content['product:field_australia_price']);
+					}
+				}
+				
+				/* Germany */
+				elseif($domain_id == 3){
+					if(in_array('vip', $user->roles)){
+						print ('<div class="field-label"><strong>VIP Price:&nbsp;</strong></div>');
+						print render ($content['field_germany_vip']);
+					} else {
+						print render ($content['product:field_germany_price']);
+					}
+				}
+				
+				/* Japan */
+				elseif($domain_id == 6){
+					if(in_array('vip', $user->roles)){
+						print ('<div class="field-label"><strong>VIP Price:&nbsp;</strong></div>');
+						print render ($content['field_japan_vip']);
+					} else {
+						print render ($content['product:field_japan_price']);
+					}
+				}
+			
+			?>
+            </div>
             <p><?php print substr(strip_tags(render($content['body'])), 0, 200);?></p>
             <?php print render($content['field_product']);?>
             <?php 
