@@ -11,18 +11,23 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: FuturaLight;	
 }
 
+#contact-site-form .form-item-subject, #contact-site-form--2 .form-item-subject {
+	text-align: left;	
+}
+
 .seacret_language ul { list-style: none; }
 .seacret_language ul li { float: left; margin: 0px 15px; }
 
-#edit-product-id--3 { display: none; }
-#edit-product-id--4 { display: none; }
-#edit-product-id--5 { display: none; }
-#edit-product-id--13 { display: none; }
-#edit-product-id--9 { display: none; }
-#edit-product-id--10 { display: none; }
-#edit-product-id--11 { display: none; }
-#edit-product-id--12 { display: none; }
-#edit-product-id { display: none; }
+.view-products-shop #edit-product-id--3 { display: none; }
+.view-products-shop #edit-product-id--4 { display: none; }
+.view-products-shop #edit-product-id--5 { display: none; }
+.view-products-shop #edit-product-id--13 { display: none; }
+.view-products-shop #edit-product-id--9 { display: none; }
+.view-products-shop #edit-product-id--10 { display: none; }
+.view-products-shop #edit-product-id--11 { display: none; }
+.view-products-shop #edit-product-id--12 { display: none; }
+.view-products-shop #edit-product-id--6 { display: none; }
+.view-products-shop #edit-product-id { display: none; }
 
 node .links,.node-readmore,
 .comment .links { display:none !important;
@@ -42,6 +47,9 @@ node .links,.node-readmore,
   margin-top: -50px;
 }
 
+.site-logo img {
+	margin-top: 15px;	
+}
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	
