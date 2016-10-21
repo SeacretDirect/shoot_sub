@@ -125,7 +125,6 @@ textarea {
   transition: all 0.4s ease-out;
 }
 .btn-default:hover {
-  /* background: !important; */
   color: #444;
 }
 .line-60 {
@@ -200,6 +199,11 @@ tbody {
 #section-top {
   border-bottom: solid 1px #eceef0;
   line-height: 35px;
+}
+#section-top .fa {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 #section-top .hotline {
   font-size: 11px;

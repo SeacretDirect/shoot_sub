@@ -187,6 +187,11 @@ if(!$domain_id){
                 }
             ?>
             <?php print flag_create_link('wishlist', $product);?>
+            <div id="share-product" class="addthis_inline_share_toolbox">
+                <div class="field">
+                    <div class="field-label">Share:</div>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -244,3 +249,4 @@ if(!$domain_id){
     
     <div class="sep60"></div>
 </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-580934d27668c49a"></script> 

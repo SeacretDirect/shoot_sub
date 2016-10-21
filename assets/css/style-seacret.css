@@ -77,6 +77,12 @@ node .links,.node-readmore,
 .cart h2, .cart .commerce-product-sku, .cart .commerce-product-title, .cart .field-name-commerce-price, .cart ul.links, .cart .flag-wishlist, .cart .commerce-product-status { display: none; }
 .cart .field-name-field-product-images img { max-width: 150px; }
 
+#share-product {
+	display: block;
+	margin: 20px 0;
+	float: left;
+}
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 	
 	.seacret_home_blocks {
