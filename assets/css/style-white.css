@@ -125,6 +125,7 @@ textarea {
   transition: all 0.4s ease-out;
 }
 .btn-default:hover {
+  background: !important;
   color: #444;
 }
 .line-60 {
@@ -132,6 +133,11 @@ textarea {
   height: 60px;
   width: 100%;
   margin: 0;
+}
+#section-top .fa {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 .line-20 {
   padding: 0;
@@ -199,11 +205,6 @@ tbody {
 #section-top {
   border-bottom: solid 1px #eceef0;
   line-height: 35px;
-}
-#section-top .fa {
-  font-size: 16px;
-  vertical-align: middle;
-  margin-right: 5px;
 }
 #section-top .hotline {
   font-size: 11px;
@@ -398,7 +399,7 @@ body.preset-dark .bg-reflect-section {
   background-color: #fff;
 }
 #section-main-content {
-  margin-top: 50px;
+  padding-top: 50px;
 }
 body.preset-white #section-page-title {
   background-color: #fafafa;
@@ -1895,7 +1896,7 @@ a {
 }
 hr:after {
   color: #E5E5E5;
-  content: "";
+  content: "";
   font-family: 'fontello';
   font-size: 18px;
   left: 49%;
@@ -6282,23 +6283,23 @@ body.rtl .list-1 li:after,
 body.rtl .list-2 li:after,
 body.rtl .list-3 li:after,
 body.rtl .list-4 li:after {
-  content: "";
+  content: "";
   font-family: "FontAwesome";
   margin: 0 0 0 8px;
   position: relative;
   color: #5F8CB4;
 }
 body.rtl .list-1 li:after {
-  content: "";
+  content: "";
 }
 body.rtl .list-2 li:after {
   content: "\f105";
 }
 body.rtl .list-3 li:after {
-  content: "";
+  content: "";
 }
 body.rtl .list-4 li:after {
-  content: "";
+  content: "";
 }
 body.rtl .headline {
   padding-right: 0;
